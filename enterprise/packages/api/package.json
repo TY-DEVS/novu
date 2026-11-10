@@ -4,9 +4,9 @@
   "private": true,
   "main": "dist/index.js",
   "scripts": {
-    "build": "node ./check-ee.mjs",
-    "build:esm": "node_modules/.bin/tsc -p tsconfig.json",
-    "build:watch": "node_modules/.bin/tsc -w -p tsconfig.json",
+    "build": "node init && node ./check-ee.mjs",
+    "build:esm": "node init && node_modules/.bin/tsc -p tsconfig.json",
+    "build:watch": "node init && node_modules/.bin/tsc -w -p tsconfig.json",
     "check": "biome check .",
     "check:fix": "biome check --write .",
     "lint": "echo 'skip lint in the ci'"

@@ -4,10 +4,10 @@
   "private": true,
   "main": "dist/index.js",
   "scripts": {
-    "start": "npm run build:watch",
-    "build": "node ./check-ee.mjs",
-    "build:esm": "node_modules/.bin/tsc -p tsconfig.json",
-    "build:watch": "node_modules/.bin/tsc -w -p tsconfig.json",
+    "start": "node init && npm run build:watch",
+    "build": "node init && node ./check-ee.mjs",
+    "build:esm": "node init && node_modules/.bin/tsc -p tsconfig.json",
+    "build:watch": "node init && node_modules/.bin/tsc -w -p tsconfig.json",
     "typecheck:spec": "tsc --noEmit -p tsconfig.spec.json",
     "check": "biome check .",
     "check:fix": "biome check --write ."

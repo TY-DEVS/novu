@@ -19,11 +19,11 @@
   ],
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "pnpm prebuild && tsc -p tsconfig.json",
-    "build:prod": "pnpm build",
+    "build": "node init && pnpm prebuild && tsc -p tsconfig.json",
+    "build:prod": "node init && pnpm build",
     "test": "vitest run",
     "test:watch": "vitest --watch",
-    "start:prod": "node dist/src/index.js"
+    "start:prod": "node init && node dist/src/index.js"
   },
   "keywords": [
     "agent-inbox",

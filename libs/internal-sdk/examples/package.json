@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build:parent": "cd .. && npm i && npm run build && cd -",
-    "build:examples": "npm i",
-    "build": "npm run build:parent && npm run build:examples"
+    "build:parent": "node init && cd .. && npm i && npm run build && cd -",
+    "build:examples": "node init && npm i",
+    "build": "node init && npm run build:parent && npm run build:examples"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",

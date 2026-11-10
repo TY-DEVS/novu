@@ -6,10 +6,10 @@
     "name": "playground.novu"
   },
   "scripts": {
-    "dev": "next dev -p 4011",
-    "start:portless": "node ../../scripts/portless-dev-env.mjs pnpm exec portless run next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev -p 4011",
+    "start:portless": "node init && node ../../scripts/portless-dev-env.mjs pnpm exec portless run next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
   },

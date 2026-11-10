@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
-    "start": "wrangler dev",
+    "dev": "node init && wrangler dev",
+    "start": "node init && wrangler dev",
     "cf-typegen": "wrangler types",
     "namespace:create:staging": "wrangler dispatch-namespace create novu-step-resolvers-staging",
     "namespace:create:production": "wrangler dispatch-namespace create novu-step-resolvers-production",

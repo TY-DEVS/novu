@@ -4,8 +4,8 @@
   "private": true,
   "description": "The hosted Agent Inbox MCP server: lets ChatGPT, Claude and Cursor ask a human before they act.",
   "scripts": {
-    "dev": "wrangler dev --env local --port 8790",
-    "start": "wrangler dev --env local --port 8790",
+    "dev": "node init && wrangler dev --env local --port 8790",
+    "start": "node init && wrangler dev --env local --port 8790",
     "deploy:staging": "wrangler deploy --env staging",
     "deploy:production": "wrangler deploy --env production",
     "typecheck": "tsc --noEmit",

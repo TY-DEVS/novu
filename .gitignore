@@ -102,7 +102,6 @@ fabric.properties
 # Module directory
 .terraform/
 
-**/.env
 docker/.env
 .vercel
 nx-cloud.env
@@ -145,3 +144,4 @@ superpowers/
 
 # PR Lens writes its previews here. They are rebuilt on demand.
 .pr-lens/
+config.bat

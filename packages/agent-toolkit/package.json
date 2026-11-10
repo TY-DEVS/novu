@@ -24,8 +24,8 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsc --noEmit && NODE_ENV=production tsup",
-    "build:watch": "tsup --watch",
+    "build": "node init && tsc --noEmit && NODE_ENV=production tsup",
+    "build:watch": "node init && tsup --watch",
     "check": "biome check .",
     "check:fix": "biome check --write ."
   },

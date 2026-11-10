@@ -2,7 +2,7 @@
   "name": "@novu/chat-sdk-adapter",
   "version": "0.3.0",
   "type": "module",
-  "description": "Novu adapter for the Chat SDK — expose all of Novu's normalized chat channels (Slack, WhatsApp, Teams, Telegram, Email) as a single Chat SDK platform adapter",
+  "description": "Novu adapter for the Chat SDK \u2014 expose all of Novu's normalized chat channels (Slack, WhatsApp, Teams, Telegram, Email) as a single Chat SDK platform adapter",
   "license": "MIT",
   "homepage": "https://github.com/novuhq/novu/tree/next/packages/chat-adapter#readme",
   "repository": {
@@ -38,7 +38,7 @@
   "scripts": {
     "prepublishOnly": "pnpm build",
     "prebuild": "rimraf dist",
-    "build": "tsc --noEmit && tsup",
+    "build": "node init && tsc --noEmit && tsup",
     "watch:build": "tsup --watch",
     "test": "vitest run",
     "test:watch": "vitest",
